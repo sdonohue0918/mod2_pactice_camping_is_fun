@@ -3,5 +3,6 @@
 <ul>
   <% @campers.each do |camper| %>
     <li><%= camper.name %></li>
+    <li><%= link_to "My Page", camper_path(camper.id)%>
   <% end %>
 </ul>

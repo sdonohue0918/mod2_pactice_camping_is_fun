@@ -1,0 +1,10 @@
+<h1> Hi! I'm <%= @camper.name%>. I am <%=@camper.age%> and this is my activity history!</h1>
+
+
+
+<% @camper.signups.each do |signup|%>
+<ul>
+<li><%=signup.activity.name%></li>
+<li><%= signup.time%>
+</ul>
+<%end%>
